@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/E764/Form1.cs) (VB: [Form1.vb](./VB/E764/Form1.vb))
+* [Program.cs](./CS/E764/Program.cs) (VB: [Program.vb](./VB/E764/Program.vb))
+<!-- default file list end -->
 # How to reorder grid rows by drag and drop
 
 
