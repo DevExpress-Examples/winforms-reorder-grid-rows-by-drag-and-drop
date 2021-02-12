@@ -59,6 +59,14 @@ End Sub
 
 <p>Data Source reordering logic should be implemented in the <strong>DragDrop</strong> event handler.<br><br>In older versions, reordering is implemented using the standard Drag events.</p>
 
+<b>See also:</b>
+
+[DevExpress WinForms Cheat Sheet - Drag-and-Drop Within/Between Controls](https://go.devexpress.com/CheatSheets_WinForms_Examples_T949086.aspx)
+
+[DevExpress WinForms Troubleshooting - Grid Control](https://go.devexpress.com/CheatSheets_WinForms_Examples_T934742.aspx)
+
+
+
 <br/>
 
 
