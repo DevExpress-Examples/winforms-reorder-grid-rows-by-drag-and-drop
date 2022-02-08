@@ -3,12 +3,8 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E764)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Form1.cs](./CS/E764/Form1.cs) (VB: [Form1.vb](./VB/E764/Form1.vb))
-* [Program.cs](./CS/E764/Program.cs) (VB: [Program.vb](./VB/E764/Program.vb))
-<!-- default file list end -->
+
 # Data Grid for WinForms - How to reorder grid rows by drag-and-drop
 
 [Drag And Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior) allows you to implement row drag-and-drop for [GridControls](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.GridControl). This example handles [Drag And Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior)'s  [DragOver](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragOver) and [DragDrop](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragDrop) events to implement row drag-and-drop within a grid control.
@@ -53,11 +49,21 @@ End Sub
 
 A [DragDrop](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragDrop) event handler reorders rows on the data source level.
 
-<b>See also:</b>
 
-[DevExpress WinForms Cheat Sheet - Drag-and-Drop Within/Between Controls](https://go.devexpress.com/CheatSheets_WinForms_Examples_T949086.aspx)
+<!-- default file list -->
+## Files to Look At
 
-[DevExpress WinForms Troubleshooting - Grid Control](https://go.devexpress.com/CheatSheets_WinForms_Examples_T934742.aspx)
+* [Form1.cs](./CS/E764/Form1.cs) (VB: [Form1.vb](./VB/E764/Form1.vb))
+* [Program.cs](./CS/E764/Program.cs) (VB: [Program.vb](./VB/E764/Program.vb))
+<!-- default file list end -->
+
+## Documentation
+- [Drag And Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior)
+
+## See Also
+
+- [DevExpress WinForms Cheat Sheet - Drag-and-Drop Within/Between Controls](https://go.devexpress.com/CheatSheets_WinForms_Examples_T949086.aspx)
+- [DevExpress WinForms Troubleshooting - Grid Control](https://go.devexpress.com/CheatSheets_WinForms_Examples_T934742.aspx)
 
 
 
