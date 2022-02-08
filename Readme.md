@@ -9,11 +9,9 @@
 * [Form1.cs](./CS/E764/Form1.cs) (VB: [Form1.vb](./VB/E764/Form1.vb))
 * [Program.cs](./CS/E764/Program.cs) (VB: [Program.vb](./VB/E764/Program.vb))
 <!-- default file list end -->
-# How to reorder grid rows by drag and drop
+# Data Grid for WinForms - How to reorder grid rows by drag-and-drop
 
-
-<p>This example extends the example provided in the <a href="https://www.devexpress.com/Support/Center/p/A2343">How to allow an end-user to move the rows in a grid up and down if the grid is bound to a DataTable</a> article and illustrates how to reorder rows by drag and drop.<br><br>Starting with version 17.2.4, you can attach <a href="https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior">Drag And Drop Behavior</a> to GridControl to implement reordering. For this, handle the <strong>DragOver</strong> and <strong>DragDrop</strong> events of the corresponding behavior using the following code:</p>
-
+[Drag And Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior) allows you to implement row drag-and-drop for [GridControls](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.GridControl). This example handles [Drag And Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior)'s  [DragOver](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragOver) and [DragDrop](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragDrop) events to implement row drag-and-drop within a grid control.
 
 ```cs
 DragDropBehavior gridControlBehavior = behaviorManager1.GetBehavior<DragDropBehavior>(gridView);
@@ -21,11 +19,6 @@ gridControlBehavior.DragDrop += Behavior_DragDrop;
 gridControlBehavior.DragOver += Behavior_DragOver;
 
 ```
-
-
-<p> </p>
-
-
 ```vb
 Dim gridControlBehavior As DragDropBehavior = behaviorManager1.GetBehavior(Of DragDropBehavior)(Me.gridView1)
 AddHandler gridControlBehavior.DragDrop, AddressOf Behavior_DragDrop
@@ -33,7 +26,7 @@ AddHandler gridControlBehavior.DragOver, AddressOf Behavior_DragOver
 ```
 
 
-<p>In the <strong>DragOver</strong> event handler, calculate drag-drop parameters (<strong>InsertType,</strong> <strong>InsertIndicatorLocation, Action</strong> and<strong> Cursor</strong>) using the static <strong>DragOverGridEventArgs.GetDragOverGridEventArgs </strong>method:</p>
+A [DragOver](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragOver) event handler uses the static `DragOverGridEventArgs.GetDragOverGridEventArgs` method to calculate a drag-and-drop operation's settings (state). These settings are then assigned to event arguments to activate the drag-and-drop functionality.
 
 
 ```cs
@@ -47,9 +40,6 @@ private void Behavior_DragOver(object sender, DragOverEventArgs e) {
 } 
 ```
 
-
-
-
 ```vb
 Private Sub Behavior_DragOver(ByVal sender As Object, ByVal e As DragOverEventArgs)
     Dim args As DragOverGridEventArgs = DragOverGridEventArgs.GetDragOverGridEventArgs(e)
@@ -61,8 +51,7 @@ Private Sub Behavior_DragOver(ByVal sender As Object, ByVal e As DragOverEventAr
 End Sub
 ```
 
-
-<p>Data Source reordering logic should be implemented in the <strong>DragDrop</strong> event handler.<br><br>In older versions, reordering is implemented using the standard Drag events.</p>
+A [DragDrop](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragDrop) event handler reorders rows on the data source level.
 
 <b>See also:</b>
 
@@ -72,6 +61,5 @@ End Sub
 
 
 
-<br/>
 
 
