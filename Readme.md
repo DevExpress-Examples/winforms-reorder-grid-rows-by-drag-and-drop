@@ -22,7 +22,7 @@ AddHandler gridControlBehavior.DragOver, AddressOf Behavior_DragOver
 ```
 
 
-A [DragOver](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragOver) event handler uses the static `DragOverGridEventArgs.GetDragOverGridEventArgs` method to calculate a drag-and-drop operation's settings (state). These settings are then assigned to event arguments to activate the drag-and-drop functionality.
+A [DragOver](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragOver) event handler uses the static `DragOverGridEventArgs.GetDragOverGridEventArgs` method to calculate a drag-and-drop operation's settings (state). These settings are then assigned to event arguments to activate the drag-and-drop functionality:
 
 
 ```cs
