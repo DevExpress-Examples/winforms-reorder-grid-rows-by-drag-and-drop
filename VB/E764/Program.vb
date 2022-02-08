@@ -1,15 +1,13 @@
-﻿Imports System
+Imports System
 Imports System.Windows.Forms
 
 Namespace E764
-    Friend NotInheritable Class Program
 
-        Private Sub New()
-        End Sub
+    Friend Module Program
 
-        <STAThread> _
-        Shared Sub Main()
-            Application.Run(New Form1())
+        <STAThread>
+        Sub Main()
+            Call Application.Run(New Form1())
         End Sub
-    End Class
+    End Module
 End Namespace
