@@ -58,7 +58,7 @@ A [DragDrop](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.
 <!-- default file list end -->
 
 ## Documentation
-- [Drag And Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior)
+- [Drag-and-Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior)
 
 ## See Also
 
