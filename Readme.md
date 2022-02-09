@@ -7,7 +7,7 @@
 
 # Data Grid for WinForms - How to reorder grid rows by drag-and-drop
 
-[Drag And Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior) allows you to implement row drag-and-drop for [GridControls](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.GridControl). This example handles [Drag And Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior)'s  [DragOver](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragOver) and [DragDrop](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragDrop) events to implement row drag-and-drop within a grid control.
+[Drag-and-Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior) allows you to implement row drag-and-drop for [GridControls](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.GridControl). This example handles the [Drag-and-Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior)'s [DragOver](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragOver) and [DragDrop](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragDrop) events to implement row drag-and-drop within a grid control.
 
 ```cs
 DragDropBehavior gridControlBehavior = behaviorManager1.GetBehavior<DragDropBehavior>(gridView);
