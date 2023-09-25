@@ -10,7 +10,7 @@
 This example demonstrates how to attach the [Drag-and-Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior) to the WinForms Grid Control and handle drag-drop-related events to allow users to reorder data rows using drag-and-drop.
 
 > **Note**:
-> Behavior describes a functional aspect of a DevExpress WinForms UI control.
+> The Behavior describes a functional aspect of a DevExpress WinForms UI control.
 > 
 > Read the following help topic for more information: [Behaviors](https://docs.devexpress.com/WindowsForms/117235/common-features/behaviors).
 
@@ -30,7 +30,7 @@ AddHandler gridControlBehavior.DragOver, AddressOf Behavior_DragOver
 
 ## Handle the DragOver Event
 
-The [DragOver](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragOver) event is handled to display the insert indicator and update the mouse pointer. The `DragOverGridEventArgs.GetDragOverGridEventArgs` static method is used to calculate drag-and-drop settings (state). These settings are used to specify appropriate event arguments for activating the drag and drop functionality:
+The [DragOver](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.DragDrop.DragDropEvents.DragOver) event is handled to display the insert indicator and update the mouse pointer. The `DragOverGridEventArgs.GetDragOverGridEventArgs` static method is used to calculate drag-and-drop settings (state). These settings are used to specify appropriate event arguments for activating the drag-and-drop functionality:
 
 ```cs
 private void Behavior_DragOver(object sender, DragOverEventArgs e) {
