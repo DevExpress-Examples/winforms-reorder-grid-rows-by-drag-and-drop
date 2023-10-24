@@ -7,12 +7,17 @@
 
 # WinForms Data Grid - How to reorder rows using drag-and-drop
 
-This example demonstrates how to attach the [Drag-and-Drop Behavior](https://documentation.devexpress.com/WindowsForms/118656/Common-Features/Behaviors/Drag-And-Drop-Behavior) to the WinForms Grid Control and handle drag-drop-related events to allow users to reorder data rows using drag-and-drop.
-
 > **Note**:
-> The Behavior describes a functional aspect of a DevExpress WinForms UI control.
-> 
-> Read the following help topic for more information: [Behaviors](https://docs.devexpress.com/WindowsForms/117235/common-features/behaviors).
+> In v23.2+, the `GridView` supports the following drag-and-drop operations out of the box:
+>
+> * Move selected rows to another Grid control.
+> * Reorder selected rows within the GridView (supported data sources: `IList`, `DataTable`, `DataView`).
+>
+> Use the [GridView.OptionsDragDrop](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridView.OptionsDragDrop?v=23.2) property to configure drag-and-drop operations that users can perform within the GridView.
+
+This example demonstrates how to attach the [Drag-and-Drop Behavior](https://docs.devexpress.com/WindowsForms/118656/common-features/behaviors/drag-and-drop-behavior) to the WinForms Grid Control and handle drag-drop-related events to allow users to reorder data rows using drag-and-drop.
+
+The Behavior describes a functional aspect of a DevExpress WinForms UI control. Read the following help topic for more information: [Behaviors](https://docs.devexpress.com/WindowsForms/117235/common-features/behaviors).
 
 ## Attach Drag-and-Drop Behavior to GridView
 
